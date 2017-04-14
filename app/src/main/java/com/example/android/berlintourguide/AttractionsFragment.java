@@ -25,7 +25,7 @@ public class AttractionsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_attractions, container, false);
+        View rootView = inflater.inflate(R.layout.item_list, container, false);
 
         // Create a list of attractions
         final ArrayList<Item> items = new ArrayList<Item>();
