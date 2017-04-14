@@ -1,6 +1,20 @@
 <resources>
     <string name="app_name">Berlin Tour Guide</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Strings for the attractions -->
+    <!-- Brandenburg Gate -->
+    <string name="attraction_name_brandenburg_gate">Brandenburg Gate</string>
+    <string name="attraction_desc_brandendurg_gate">one of the best-known landmarks of Germany. It
+        is built on the site of a former city gate that marked the start of the road from Berlin to
+        the town of Brandenburg an der Havel.</string>
+
+    <!-- Reichstag -->
+    <string name="attraction_name_reichstag_building">Reichstag Building</string>
+    <string name="attraction_desc_reichstag_building">The Reichstag building, officially: Deutscher
+        Bundestag, is a historical edifice in Berlin, Germany, constructed to house the Imperial Diet
+        , of the German Empire</string>
+
+    <string name="attraction_berlin_wall_memorial">Memorial of the Berlin Wall</string>
+
+
 </resources>
