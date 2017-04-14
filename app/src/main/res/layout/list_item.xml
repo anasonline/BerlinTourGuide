@@ -54,5 +54,18 @@
             android:textAppearance="?android:textAppearanceSmall"
             android:textColor="@android:color/black"
             tools:text="@string/attraction_desc_brandendurg_gate" />
+
+        <TextView
+            android:id="@+id/item_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Waitzstr. 26 - 10629 Berlin" />
+
+        <TextView
+            android:id="@+id/item_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="07.07.2017" />
+
     </LinearLayout>
 </LinearLayout>

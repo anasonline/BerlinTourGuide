@@ -16,14 +16,21 @@ import java.util.ArrayList;
 
 public class ItemAdapter extends ArrayAdapter<Item> {
 
+    private String mItemType;
+
     /**
      * Create a new {@link ItemAdapter} object.
      *
      * @param context is the current context (i.e. Activity) that the adapter is being created in.
      * @param items   is the list of {@link Item}s to be displayed.
      */
-    public ItemAdapter(Context context, ArrayList<Item> items) {
+    public ItemAdapter(Context context, ArrayList<Item> items, String itemType) {
         super(context, 0, items);
+        mItemType = itemType;
+    }
+
+    private String getItemType() {
+        return mItemType;
     }
 
     @Override
@@ -42,18 +49,31 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         TextView itemName = (TextView) listItemView.findViewById(R.id.item_name);
 
         // Get the currentItem object and set this text on the item_name TextView.
-        itemName.setText(currentItem.getmItemNameId());
+        itemName.setText(currentItem.getItemNameId());
 
         // Find the TextView in the list_item.xml layout with the ID item_description.
         TextView itemDescription = (TextView) listItemView.findViewById(R.id.item_description);
 
         // Get the currentItem object and set this text on the item_description TextView.
-        itemDescription.setText(currentItem.getmItemDescriptionId());
+        itemDescription.setText(currentItem.getItemDescriptionId());
 
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
-        imageView.setImageResource(currentItem.getmItemImageResourceId());
-        imageView.setVisibility(View.VISIBLE);
 
+        if (getItemType().equals("Attraction")) {
+
+            imageView.setImageResource(currentItem.getItemImageResourceId());
+            imageView.setVisibility(View.VISIBLE);
+        }
+
+        if (getItemType().equals("Event")) {
+            imageView.setVisibility(View.GONE);
+
+            TextView itemAddress = (TextView) listItemView.findViewById(R.id.item_address);
+            itemAddress.setText(currentItem.getItemAddressResourceId());
+
+            TextView itemDate = (TextView) listItemView.findViewById(R.id.item_date);
+            itemDate.setText(currentItem.getItemDateResourceId());
+        }
 
         // Return the whole list item layout so that it can be shown in the ListView.
         return listItemView;

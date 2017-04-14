@@ -16,5 +16,19 @@
 
     <string name="attraction_berlin_wall_memorial">Memorial of the Berlin Wall</string>
 
+    <!-- Strings for the events -->
+    <!-- Lady Gaga -->
+    <string name="event_name_lady_gaga">Lady Gaga Berlin</string>
+    <string name="event_description_lady_gaga">Don\'t miss this fabulous opportunity to see Lady Gaga
+        live at the Mercedes-Benz Arena. Yes that is right... Lady Gaga is touring again.</string>
+    <string name="event_date_lady_gaga">03.07.2017</string>
+    <string name="event_address_lady_gaga">Mercedes-Platz 1 \n Berlin 10243</string>
+
+    <!-- Pat Metheny -->
+    <string name="event_name_pat_metheny">Pat Metheny in Berlin</string>
+    <string name="event_description_pat_metheny">Enjoy one of the world\'s most famous guitar artists
+    live in Berlin</string>
+    <string name="event_date_pat_metheny">07.07.2017</string>
+    <string name="event_address_pat_metheny">Friedrichstr. 101 \n Berlin 10117</string>
 
 </resources>

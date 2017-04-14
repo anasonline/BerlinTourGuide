@@ -28,6 +28,16 @@ public class Item {
     private int mItemImageResourceId;
 
     /**
+     * String resource ID for the item address
+     */
+    private int mItemAddressResourceId;
+
+    /**
+     * String resource ID for the item (event) address
+     */
+    private int mItemDateResourceId;
+
+    /**
      * Create a new Item object.
      *
      * @param itemNameId          is the string resource ID for item's name
@@ -41,26 +51,39 @@ public class Item {
         mItemImageResourceId = itemImageResourceId;
     }
 
+    public Item(int itemNameId, int itemDescriptionId, int itemAddressResourceId, int itemDateResourceId) {
+        mItemNameId = itemNameId;
+        mItemDescriptionId = itemDescriptionId;
+        mItemAddressResourceId = itemAddressResourceId;
+        mItemDateResourceId = itemDateResourceId;
+    }
+
     /**
      * Get the string resource ID for the item's name.
      */
-    public int getmItemNameId() {
+    public int getItemNameId() {
         return mItemNameId;
     }
 
     /**
      * Get the string resource ID for the item's description.
      */
-    public int getmItemDescriptionId() {
+    public int getItemDescriptionId() {
         return mItemDescriptionId;
     }
 
     /**
      * Get the string resource ID for the item's image.
      */
-    public int getmItemImageResourceId() {
+    public int getItemImageResourceId() {
         return mItemImageResourceId;
     }
 
+    public int getItemAddressResourceId() {
+        return mItemAddressResourceId;
+    }
 
+    public int getItemDateResourceId() {
+        return mItemDateResourceId;
+    }
 }
