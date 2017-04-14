@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -32,8 +33,23 @@ public class AttractionsFragment extends Fragment {
 
         items.add(new Item(R.string.attraction_name_brandenburg_gate, R.string.attraction_desc_brandendurg_gate,
                 R.drawable.ic_place_black_24dp));
-        items.add(new Item(R.string.attraction_name_reichstag_building, R.string.attraction_desc_brandendurg_gate,
+        items.add(new Item(R.string.attraction_name_reichstag_building, R.string.attraction_desc_reichstag_building,
                 R.drawable.ic_place_black_24dp));
+
+
+        // Create an {@link ItemAdapter}, whose data source is a list of {@link Item}s. The
+        // adapter knows how to create list items for each item in the list.
+        ItemAdapter adapter = new ItemAdapter(getActivity(), items);
+
+        // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
+        // There should be a {@link ListView} with the view ID called list, which is declared in the
+        // item_list.xml layout file.
+        ListView listView = (ListView) rootView.findViewById(R.id.list);
+
+        // Make the {@link ListView} use the {@link ItemAdapter} we created above, so that the
+        // {@link ListView} will display list items for each {@link Item} in the list.
+        listView.setAdapter(adapter);
+
 
         return rootView;
 
