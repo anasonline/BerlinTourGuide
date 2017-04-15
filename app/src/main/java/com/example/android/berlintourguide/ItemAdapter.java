@@ -59,19 +59,20 @@ public class ItemAdapter extends ArrayAdapter<Item> {
 
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
 
+        TextView itemAddress = (TextView) listItemView.findViewById(R.id.item_address);
+        TextView itemDate = (TextView) listItemView.findViewById(R.id.item_date);
+
         if (getItemType().equals("Attraction")) {
 
             imageView.setImageResource(currentItem.getItemImageResourceId());
             imageView.setVisibility(View.VISIBLE);
+            itemAddress.setVisibility(View.GONE);
+            itemDate.setVisibility(View.GONE);
         }
 
         if (getItemType().equals("Event")) {
             imageView.setVisibility(View.GONE);
-
-            TextView itemAddress = (TextView) listItemView.findViewById(R.id.item_address);
             itemAddress.setText(currentItem.getItemAddressResourceId());
-
-            TextView itemDate = (TextView) listItemView.findViewById(R.id.item_date);
             itemDate.setText(currentItem.getItemDateResourceId());
         }
 

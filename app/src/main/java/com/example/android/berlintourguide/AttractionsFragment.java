@@ -32,9 +32,13 @@ public class AttractionsFragment extends Fragment {
         final ArrayList<Item> items = new ArrayList<Item>();
 
         items.add(new Item(R.string.attraction_name_brandenburg_gate, R.string.attraction_desc_brandendurg_gate,
-                R.drawable.ic_place_black_24dp));
+                R.drawable.brandenburger_tor));
         items.add(new Item(R.string.attraction_name_reichstag_building, R.string.attraction_desc_reichstag_building,
-                R.drawable.ic_place_black_24dp));
+                R.drawable.reichstag));
+        items.add(new Item(R.string.attraction_name_berlin_wall_memorial, R.string.attraction_desc_berlin_wall_memorial,
+                R.drawable.wall));
+        items.add(new Item(R.string.attraction_name_berlin_philharmonic, R.string.attraction_desc_berlin_philharmonic,
+                R.drawable.philharmonie));
 
 
         // Create an {@link ItemAdapter}, whose data source is a list of {@link Item}s. The
