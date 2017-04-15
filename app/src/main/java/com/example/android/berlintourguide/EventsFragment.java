@@ -1,6 +1,5 @@
 package com.example.android.berlintourguide;
 
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,10 +9,10 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-
 /**
  * A simple {@link Fragment} subclass.
  */
+
 public class EventsFragment extends Fragment {
 
     private static final String ITEM_TYPE = "Event";
@@ -21,7 +20,6 @@ public class EventsFragment extends Fragment {
     public EventsFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -57,9 +55,6 @@ public class EventsFragment extends Fragment {
         // {@link ListView} will display list items for each {@link Item} in the list.
         listView.setAdapter(adapter);
 
-
         return rootView;
-
     }
-
 }

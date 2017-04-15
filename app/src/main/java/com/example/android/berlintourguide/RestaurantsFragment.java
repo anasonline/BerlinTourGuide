@@ -1,6 +1,5 @@
 package com.example.android.berlintourguide;
 
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -9,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-
 
 /**
  * A simple {@link Fragment} subclass.
@@ -22,7 +20,6 @@ public class RestaurantsFragment extends Fragment {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -30,7 +27,6 @@ public class RestaurantsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.item_list, container, false);
 
         // Create a list of restaurants
-
         final ArrayList<Item> items = new ArrayList<Item>();
 
         items.add(new Item(R.string.restaurant_name_facil, R.string.restaurant_desc_facil,
@@ -57,5 +53,4 @@ public class RestaurantsFragment extends Fragment {
 
         return rootView;
     }
-
 }

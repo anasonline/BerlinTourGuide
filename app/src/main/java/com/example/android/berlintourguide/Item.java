@@ -6,7 +6,7 @@ package com.example.android.berlintourguide;
 
 /**
  * {@link Item} represents an item in a list, wehther it's an attraction, event, restaurant, or
- * hotel. It contains resource IDs for item's name, description, location, and phone number.
+ * hotel. It contains resource IDs for item's name, description, address, and phone number.
  * Custom constructors are used to construct items of different types.
  */
 
@@ -33,18 +33,14 @@ public class Item {
     private int mItemAddressResourceId;
 
     /**
-     * String resource ID for the item's (in this case Event) address
+     * String resource ID for the item's (in this case Event) date
      */
     private int mItemDateResourceId;
 
     /**
-     * String resource ID for the item's (in this case Restaurant) phone number
-     */
-    private int mItemPhoneResourceId;
-
-    /**
      * Create a new Item object.
      * This constructor can be used to create Attractions
+     *
      * @param itemNameId          is the string resource ID for item's name
      * @param itemDescriptionId   is the string resource ID for item's description
      * @param itemImageResourceId is the string resource ID for item's image
@@ -75,11 +71,11 @@ public class Item {
         mItemDateResourceId = itemDateResourceId;
     }
 
-
     /**
      * Get the string resource ID for the item's name.
      */
     public int getItemNameId() {
+
         return mItemNameId;
     }
 
@@ -87,6 +83,7 @@ public class Item {
      * Get the string resource ID for the item's description.
      */
     public int getItemDescriptionId() {
+
         return mItemDescriptionId;
     }
 
@@ -94,18 +91,16 @@ public class Item {
      * Get the string resource ID for the item's image.
      */
     public int getItemImageResourceId() {
+
         return mItemImageResourceId;
     }
 
     public int getItemAddressResourceId() {
+
         return mItemAddressResourceId;
     }
 
     public int getItemDateResourceId() {
         return mItemDateResourceId;
-    }
-
-    public int getItemPhoneResourceId() {
-        return mItemPhoneResourceId;
     }
 }

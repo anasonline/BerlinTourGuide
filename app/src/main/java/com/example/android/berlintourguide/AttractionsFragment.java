@@ -1,6 +1,5 @@
 package com.example.android.berlintourguide;
 
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -9,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-
 
 /**
  * A simple {@link Fragment} subclass.
@@ -40,7 +38,6 @@ public class AttractionsFragment extends Fragment {
         items.add(new Item(R.string.attraction_name_berlin_philharmonic, R.string.attraction_desc_berlin_philharmonic,
                 R.drawable.philharmonie));
 
-
         // Create an {@link ItemAdapter}, whose data source is a list of {@link Item}s. The
         // adapter knows how to create list items for each item in the list.
         ItemAdapter adapter = new ItemAdapter(getActivity(), items, ITEM_TYPE);
@@ -54,10 +51,6 @@ public class AttractionsFragment extends Fragment {
         // {@link ListView} will display list items for each {@link Item} in the list.
         listView.setAdapter(adapter);
 
-
         return rootView;
-
-
     }
-
 }

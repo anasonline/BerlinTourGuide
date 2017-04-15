@@ -45,26 +45,24 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         // Get the {@link Item} object located at this position in the list
         Item currentItem = getItem(position);
 
-        // Find the TextView in the list_item.xml layout with the ID item_name.
+        // Find the Views in the list_item.xml layout
         TextView itemName = (TextView) listItemView.findViewById(R.id.item_name);
-
-        // Get the currentItem object and set this text on the item_name TextView.
-        itemName.setText(currentItem.getItemNameId());
-
-        // Find the TextView in the list_item.xml layout with the ID item_description.
         TextView itemDescription = (TextView) listItemView.findViewById(R.id.item_description);
-
-        // Get the currentItem object and set this text on the item_description TextView.
-        itemDescription.setText(currentItem.getItemDescriptionId());
-
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
-
         TextView itemAddress = (TextView) listItemView.findViewById(R.id.item_address);
         TextView itemDate = (TextView) listItemView.findViewById(R.id.item_date);
         TextView itemPhone = (TextView) listItemView.findViewById(R.id.item_phone);
 
-        if (getItemType().equals("Attraction")) {
 
+        // Get the currentItem object and set this text on the item_name TextView.
+        itemName.setText(currentItem.getItemNameId());
+
+        // Get the currentItem object and set this text on the item_description TextView.
+        itemDescription.setText(currentItem.getItemDescriptionId());
+
+        // View or hide UI elements according to item's type
+
+        if (getItemType().equals("Attraction")) {
             imageView.setImageResource(currentItem.getItemImageResourceId());
             imageView.setVisibility(View.VISIBLE);
             itemAddress.setVisibility(View.GONE);
@@ -89,6 +87,4 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         // Return the whole list item layout so that it can be shown in the ListView.
         return listItemView;
     }
-
-
 }

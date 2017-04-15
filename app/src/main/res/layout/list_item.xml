@@ -79,6 +79,5 @@
             android:paddingRight="16dp"
             android:paddingTop="8dp"
             tools:text="+4917 630 648 201" />
-
     </LinearLayout>
 </LinearLayout>
