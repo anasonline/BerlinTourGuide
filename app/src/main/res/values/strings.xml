@@ -14,11 +14,13 @@
         Bundestag, is a historical edifice in Berlin, Germany, constructed to house the Imperial Diet
         , of the German Empire</string>
 
+    <!-- Berlin Wall Memorial -->
     <string name="attraction_name_berlin_wall_memorial">Memorial of the Berlin Wall</string>
     <string name="attraction_desc_berlin_wall_memorial">The Berlin Wall Memorial commemorates the
         division of Berlin by the Berlin Wall and the deaths that occurred there. The monument was
         created in 1998 by the Federal Republic of Germany and the Federal State of Berlin. </string>
 
+    <!-- Berlin Philarmonic -->
     <string name="attraction_name_berlin_philharmonic">Berlin Philharmonic</string>
     <string name="attraction_desc_berlin_philharmonic">The Berlin Philharmonic, is an orchestra
         based in Berlin, Germany and is consistently ranked as one of the best orchestras in the world.
@@ -38,5 +40,19 @@
     live in Berlin</string>
     <string name="event_date_pat_metheny">07.07.2017</string>
     <string name="event_address_pat_metheny">Friedrichstr. 101\nBerlin 10117</string>
+    <!-- Cube Tech Fair -->
+    <string name="event_name_cube_tech_fair">CUBE Tech Fair</string>
+    <string name="event_desc_cube_tech_fair">Hosted at CityCube Berlin, 10th-12th May, The CUBE Tech
+        Fair is bringing together the world’s best B2B tech startups with a curated network of
+        corporate partners and key influencers.</string>
+    <string name="event_date_cube_tech_fair">05.05.2017</string>
+    <string name="event_address_cube_tech_fair">Messedamm 26\nBerlin 14055</string>
+    <!-- Festival of Colors -->
+    <string name="event_name_holi_festival_of_colors">Holi Festival of Colors</string>
+    <string name="event_desc_festival_of_colors">The first Holi Festival of Colors took place
+    in 2012. This is a worldwide event that takes place in 20 cities.</string>
+    <string name="event_date_festival_of_colors">22.07.2017</string>
+    <string name="event_address_festival_of_colors">Jesse Owens Allee\nBerlin 14053</string>
+
 
 </resources>

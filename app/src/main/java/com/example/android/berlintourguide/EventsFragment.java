@@ -38,6 +38,12 @@ public class EventsFragment extends Fragment {
         items.add(new Item(R.string.event_name_pat_metheny, R.string.event_description_pat_metheny,
                 R.string.event_address_pat_metheny, R.string.event_date_pat_metheny));
 
+        items.add(new Item(R.string.event_name_cube_tech_fair, R.string.event_desc_cube_tech_fair,
+                R.string.event_address_cube_tech_fair, R.string.event_date_cube_tech_fair));
+
+        items.add(new Item(R.string.event_name_holi_festival_of_colors, R.string.event_desc_festival_of_colors,
+                R.string.event_address_festival_of_colors, R.string.event_date_festival_of_colors));
+
         // Create an {@link ItemAdapter}, whose data source is a list of {@link Item}s. The
         // adapter knows how to create list items for each item in the list.
         ItemAdapter adapter = new ItemAdapter(getActivity(), items, ITEM_TYPE);
