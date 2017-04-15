@@ -72,5 +72,12 @@
             android:paddingRight="16dp"
             tools:text="07.07.2017" />
 
+        <TextView
+            android:id="@+id/item_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dp"
+            tools:text="+4917 630 648 201" />
+
     </LinearLayout>
 </LinearLayout>

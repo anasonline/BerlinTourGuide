@@ -33,13 +33,18 @@ public class Item {
     private int mItemAddressResourceId;
 
     /**
-     * String resource ID for the item (event) address
+     * String resource ID for the item's (in this case Event) address
      */
     private int mItemDateResourceId;
 
     /**
+     * String resource ID for the item's (in this case Restaurant) phone number
+     */
+    private int mItemPhoneResourceId;
+
+    /**
      * Create a new Item object.
-     *
+     * This constructor can be used to create Attractions
      * @param itemNameId          is the string resource ID for item's name
      * @param itemDescriptionId   is the string resource ID for item's description
      * @param itemImageResourceId is the string resource ID for item's image
@@ -51,12 +56,25 @@ public class Item {
         mItemImageResourceId = itemImageResourceId;
     }
 
+    /**
+     * Create a new Item object.
+     * This constructor can be used to create an Event, Restaurant or Hotel listing.
+     * The 4th param (@param itemDateResourceId) can be used to pass event's date information
+     * or restaurant/hotel phone number.
+     *
+     * @param itemNameId            is the string resource ID for item's name
+     * @param itemAddressResourceId is the string resource ID for item's address
+     * @param itemDescriptionId     is the string resource ID for item's description
+     * @param itemDateResourceId    is the string resource ID for item's (event) date
+     */
+
     public Item(int itemNameId, int itemDescriptionId, int itemAddressResourceId, int itemDateResourceId) {
         mItemNameId = itemNameId;
         mItemDescriptionId = itemDescriptionId;
         mItemAddressResourceId = itemAddressResourceId;
         mItemDateResourceId = itemDateResourceId;
     }
+
 
     /**
      * Get the string resource ID for the item's name.
@@ -85,5 +103,9 @@ public class Item {
 
     public int getItemDateResourceId() {
         return mItemDateResourceId;
+    }
+
+    public int getItemPhoneResourceId() {
+        return mItemPhoneResourceId;
     }
 }

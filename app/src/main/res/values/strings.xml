@@ -54,5 +54,31 @@
     <string name="event_date_festival_of_colors">22.07.2017</string>
     <string name="event_address_festival_of_colors">Jesse Owens Allee\nBerlin 14053</string>
 
+    <!-- Strings for the restaurants -->
+    <!-- FACIL -->
+    <string name="restaurant_name_facil">FACIL</string>
+    <string name="restaurant_desc_facil">International, European, Vegetarian Friendly, Vegan Options,
+        Gluten Free Options</string>
+    <string name="restaurant_address_facil">Potsdamer Str. 3\nBerlin 10785</string>
+    <string name="restaurant_phone_facil">+49 30 590051234</string>
+
+    <!-- Restaurant Bieberbau -->
+    <string name="restaurant_name_bieberbau">Restaurant Bieberbau</string>
+    <string name="restaurant_desc_bieberbau">German, Central European, Vegetarian Friendly, Vegan Options</string>
+    <string name="restaurant_address_bieberbau">Durlacher Str. 15\nBerlin 10715</string>
+    <string name="restaurant_phone_bieberbau">+49 30 8532390</string>
+
+    <!-- Restaurant Heising -->
+    <string name="restaurant_name_heising">Heising</string>
+    <string name="restaurant_desc_heising">French, European</string>
+    <string name="restaurant_address_heising">Rankestr. 32\nBerlin 10789</string>
+    <string name="restaurant_phone_heising">+49 30 2133952</string>
+
+    <!-- Restaurant Tim Raue -->
+    <string name="restaurant_name_tim_raue">Restaurant Tim Raue</string>
+    <string name="restaurant_desc_tim_raue">Asian, Fusion, Vegetarian Friendly, Gluten Free Options</string>
+    <string name="restaurant_address_tim_raue">Rudi-Dutschke-Str. 26\nBerlin 10969</string>
+    <string name="restaurant_phone_tim_raue">+49 30 25937930</string>
+
 
 </resources>

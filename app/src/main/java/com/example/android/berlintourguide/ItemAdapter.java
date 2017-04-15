@@ -61,6 +61,7 @@ public class ItemAdapter extends ArrayAdapter<Item> {
 
         TextView itemAddress = (TextView) listItemView.findViewById(R.id.item_address);
         TextView itemDate = (TextView) listItemView.findViewById(R.id.item_date);
+        TextView itemPhone = (TextView) listItemView.findViewById(R.id.item_phone);
 
         if (getItemType().equals("Attraction")) {
 
@@ -74,6 +75,13 @@ public class ItemAdapter extends ArrayAdapter<Item> {
             imageView.setVisibility(View.GONE);
             itemAddress.setText(currentItem.getItemAddressResourceId());
             itemDate.setText(currentItem.getItemDateResourceId());
+        }
+
+        if (getItemType().equals("Restaurant")) {
+            imageView.setVisibility(View.GONE);
+            itemDate.setVisibility(View.GONE);
+            itemAddress.setText(currentItem.getItemAddressResourceId());
+            itemPhone.setText(currentItem.getItemDateResourceId());
         }
 
         // Return the whole list item layout so that it can be shown in the ListView.
