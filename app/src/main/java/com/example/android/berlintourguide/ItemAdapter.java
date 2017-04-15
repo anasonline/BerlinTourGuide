@@ -69,15 +69,17 @@ public class ItemAdapter extends ArrayAdapter<Item> {
             imageView.setVisibility(View.VISIBLE);
             itemAddress.setVisibility(View.GONE);
             itemDate.setVisibility(View.GONE);
+            itemPhone.setVisibility(View.GONE);
         }
 
         if (getItemType().equals("Event")) {
             imageView.setVisibility(View.GONE);
+            itemPhone.setVisibility(View.GONE);
             itemAddress.setText(currentItem.getItemAddressResourceId());
             itemDate.setText(currentItem.getItemDateResourceId());
         }
 
-        if (getItemType().equals("Restaurant")) {
+        if (getItemType().equals("Restaurant") || getItemType().equals("Hotel")) {
             imageView.setVisibility(View.GONE);
             itemDate.setVisibility(View.GONE);
             itemAddress.setText(currentItem.getItemAddressResourceId());
